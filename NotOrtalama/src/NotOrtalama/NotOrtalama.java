@@ -1,0 +1,36 @@
+package NotOrtalama;
+import java.util.Scanner;
+
+public class NotOrtalama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub,
+		Scanner ınp=new Scanner(System.in);
+		System.out.println("Fizik Notum: ");
+		Double FizikNotu=ınp.nextDouble();
+		
+		System.out.println(FizikNotu);
+		
+		System.out.print("Matemtik Notum: ");
+		Double MatNotu=ınp.nextDouble();
+		System.out.println(MatNotu);
+		
+		System.out.print("CMPE Notum: ");
+		
+		Double cmpeNot=ınp.nextDouble();
+		
+		System.out.println(cmpeNot);
+		
+		Double NotTotal=MatNotu+FizikNotu+cmpeNot;
+		Double NotOrt=NotTotal/3;
+		System.out.println("Not Ortalamam: "+NotOrt);
+		
+		boolean kosul=NotOrt>60;
+		String str=kosul ? "Geçti":"Kaldı";
+		System.out.println(str);
+	}
+
+}
+
+
+
